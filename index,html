@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Puff & Loop</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="logo-left">
+      <img src="logo.png" alt="Puff & Loop Logo">
+    </div>
+    <div class="box">
+      <a href="https://instagram.com" class="btn">Instagram</a>
+      <a href="https://tiktok.com" class="btn">Tiktok</a>
+      <a href="https://wa.me/6281234567890" class="btn">Whatsapp</a>
+      <div class="logo-bottom">
+        <img src="logo.png" alt="Puff & Loop Logo">
+      </div>
+      <div class="social-icons">
+        <a href="https://wa.me/6281234567890"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+        <a href="https://tiktok.com"><i class="fab fa-tiktok"></i></a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
