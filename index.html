@@ -3,82 +3,105 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Puff & Loop Bio Link</title>
+  <title>Puff & Loop</title>
   <style>
     body {
       margin: 0;
       padding: 0;
-      background: url('baground.png') no-repeat center center fixed;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-image: url('baground.png.png');
       background-size: cover;
-      font-family: sans-serif;
+      background-position: center;
+      background-repeat: no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
     }
 
     .container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      padding: 20px;
-    }
-
-    .card {
-      background-color: #f9f4f0;
-      padding: 30px 40px;
-      border-radius: 16px;
+      background-color: #fffaf6;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
       text-align: center;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      max-width: 90vw;
+      width: 90%;
+      max-width: 400px;
     }
 
-    .card img.logo {
-      width: 150px;
-      margin-bottom: 20px;
+    .logo {
+      max-width: 160px;
+      margin-bottom: 30px;
     }
 
-    .card a.button {
+    .link-button {
       display: block;
-      margin: 10px auto;
-      padding: 12px;
-      width: 100%;
-      max-width: 250px;
-      border: 1px solid #333;
-      border-radius: 6px;
-      text-decoration: none;
-      color: #333;
-      font-weight: bold;
+      margin: 12px 0;
+      padding: 14px;
       background-color: #fff;
-      transition: background-color 0.3s;
+      border: 2px solid #ccc;
+      border-radius: 12px;
+      text-decoration: none;
+      color: #000;
+      font-weight: 600;
+      transition: all 0.3s ease;
     }
 
-    .card a.button:hover {
-      background-color: #f0eae5;
+    .link-button:hover {
+      background-color: #f3f3f3;
     }
 
-    .social-icons {
-      margin-top: 20px;
+    .icons {
+      margin-top: 24px;
       display: flex;
       justify-content: center;
-      gap: 16px;
+      gap: 18px;
     }
 
-    .social-icons a img {
+    .icons img {
       width: 40px;
       height: 40px;
+      transition: transform 0.2s;
+    }
+
+    .icons img:hover {
+      transform: scale(1.1);
+    }
+
+    @media (max-width: 500px) {
+      .container {
+        padding: 20px;
+        border-radius: 16px;
+      }
+
+      .link-button {
+        padding: 12px;
+        font-size: 14px;
+      }
+
+      .icons img {
+        width: 36px;
+        height: 36px;
+      }
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <div class="card">
-      <img src="logo.png" alt="Puff & Loop Logo" class="logo" />
-      <a href="https://instagram.com/yourusername" class="button">Instagram</a>
-      <a href="https://tiktok.com/@yourusername" class="button">Tiktok</a>
-      <a href="https://wa.me/628xxxxxxxxxx" class="button">Whatsapp</a>
-      <div class="social-icons">
-        <a href="https://wa.me/628xxxxxxxxxx"><img src="icon-wa.png" alt="WhatsApp" /></a>
-        <a href="https://instagram.com/yourusername"><img src="icon-instagram.png" alt="Instagram" /></a>
-        <a href="https://tiktok.com/@yourusername"><img src="icon-tiktok.png" alt="Tiktok" /></a>
-      </div>
+    <img src="logo.png.png" alt="Puff & Loop Logo" class="logo" />
+    <a href="https://www.instagram.com/" class="link-button" target="_blank">Instagram</a>
+    <a href="https://www.tiktok.com/" class="link-button" target="_blank">Tiktok</a>
+    <a href="https://wa.me/" class="link-button" target="_blank">Whatsapp</a>
+    <div class="icons">
+      <a href="https://wa.me/" target="_blank">
+        <img src="icon-wa.png.png" alt="WhatsApp" />
+      </a>
+      <a href="https://www.instagram.com/" target="_blank">
+        <img src="icon-instagram.png.png" alt="Instagram" />
+      </a>
+      <a href="https://www.tiktok.com/" target="_blank">
+        <img src="icon-tiktok.png.png" alt="TikTok" />
+      </a>
     </div>
   </div>
 </body>
