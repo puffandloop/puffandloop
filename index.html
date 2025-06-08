@@ -1,120 +1,75 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
   <title>Puff & Loop</title>
   <style>
     body {
       margin: 0;
       padding: 0;
-      font-family: 'Georgia', serif;
       background: url('baground.png') no-repeat center center fixed;
       background-size: cover;
-      display: flex;
-      height: 100vh;
-      justify-content: center;
-      align-items: center;
+      font-family: sans-serif;
     }
 
     .container {
       display: flex;
-      width: 90%;
-      max-width: 1200px;
-      background-color: rgba(255, 255, 255, 0.6);
+      justify-content: flex-end;
+      align-items: center;
+      height: 100vh;
+      padding-right: 100px;
+    }
+
+    .card {
+      background-color: #f9f4f0;
+      padding: 30px 40px;
       border-radius: 16px;
+      text-align: center;
       box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      overflow: hidden;
     }
 
-    .left {
-      flex: 1;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: transparent;
-      padding: 20px;
-    }
-
-    .left img {
-      max-width: 80%;
-      height: auto;
-    }
-
-    .right {
-      flex: 1;
-      background-color: #f8f2ec;
-      padding: 40px 30px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .button {
-      width: 100%;
-      max-width: 300px;
-      padding: 12px;
-      margin: 10px 0;
-      font-size: 16px;
-      background-color: transparent;
-      border: 2px solid #333;
-      border-radius: 8px;
-      cursor: pointer;
-      transition: all 0.3s ease;
-    }
-
-    .button:hover {
-      background-color: #e9ddd5;
-    }
-
-    .small-logo {
-      margin-top: 40px;
+    .card img.logo {
+      width: 150px;
       margin-bottom: 20px;
     }
 
-    .small-logo img {
-      height: 60px;
+    .card a.button {
+      display: block;
+      margin: 10px auto;
+      padding: 12px;
+      width: 200px;
+      border: 1px solid #333;
+      border-radius: 6px;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      background-color: #fff;
     }
 
     .social-icons {
-      display: flex;
-      gap: 16px;
+      margin-top: 20px;
     }
 
-    .social-icons img {
-      width: 36px;
-      height: 36px;
+    .social-icons a img {
+      width: 40px;
+      height: 40px;
+      margin: 0 10px;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <!-- Kiri: Logo Besar -->
-    <div class="left">
-      <img src="logo.png" alt="Puff & Loop Logo Besar">
-    </div>
+    <div class="card">
+      <img class="logo" src="logo.png" alt="Puff & Loop logo">
 
-    <!-- Kanan: Tombol dan Ikon -->
-    <div class="right">
-      <a href="https://www.instagram.com" target="_blank">
-        <button class="button">Instagram</button>
-      </a>
-      <a href="https://www.tiktok.com" target="_blank">
-        <button class="button">Tiktok</button>
-      </a>
-      <a href="https://wa.me/6281234567890" target="_blank">
-        <button class="button">Whatsapp</button>
-      </a>
-
-      <div class="small-logo">
-        <img src="logo.png" alt="Puff & Loop Kecil">
-      </div>
+      <a class="button" href="#">Instagram</a>
+      <a class="button" href="#">Tiktok</a>
+      <a class="button" href="#">Whatsapp</a>
 
       <div class="social-icons">
-        <a href="https://wa.me/6281234567890" target="_blank"><img src="icon-wa.png" alt="WA"></a>
-        <a href="https://www.instagram.com" target="_blank"><img src="icon-instagram.png" alt="IG"></a>
-        <a href="https://www.tiktok.com" target="_blank"><img src="icon-tiktok.png" alt="TikTok"></a>
+        <a href="#"><img src="icon-wa.png" alt="WhatsApp"></a>
+        <a href="#"><img src="icon-instagram.png" alt="Instagram"></a>
+        <a href="#"><img src="icon-tiktok.png" alt="Tiktok"></a>
       </div>
     </div>
   </div>
