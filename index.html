@@ -6,50 +6,69 @@
   <title>Puff & Loop</title>
   <style>
     body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: url('background.png') no-repeat center center fixed;
-      background-size: cover;
-      text-align: center;
+      background-color: #666;
       color: white;
+      text-align: center;
+      font-family: sans-serif;
+      margin: 0;
+      padding: 40px 20px;
     }
-    .container {
-      padding: 60px 20px;
-      background-color: rgba(0, 0, 0, 0.6);
-      min-height: 100vh;
-    }
+
     .logo {
-      max-width: 150px;
-      margin-bottom: 20px;
+      width: 200px;
+      height: auto;
+      display: block;
+      margin: 0 auto 30px auto;
     }
-    .social-links img {
+
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.2em;
+      margin-bottom: 30px;
+    }
+
+    .icons {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+    }
+
+    .icons a img {
       width: 40px;
-      margin: 10px;
-      transition: transform 0.3s ease;
+      height: 40px;
+      transition: transform 0.2s ease;
     }
-    .social-links img:hover {
+
+    .icons a img:hover {
       transform: scale(1.2);
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <img src="logo.png" alt="Logo Puff & Loop" class="logo" />
 
-    <h1>Puff & Loop</h1>
-    <p>Temukan kami di platform favoritmu:</p>
+  <!-- Logo -->
+  <img src="logonya.png" alt="Puff & Loop Logo" class="logo" />
 
-    <div class="social-links">
-      <a href="https://instagram.com/username" target="_blank">
-        <img src="icon-instagram.png" alt="Instagram" />
-      </a>
-      <a href="https://tiktok.com/@username" target="_blank">
-        <img src="icon-tiktok.png" alt="TikTok" />
-      </a>
-      <a href="https://wa.me/6281234567890" target="_blank">
-        <img src="icon-wa.png" alt="WhatsApp" />
-      </a>
-    </div>
+  <!-- Judul -->
+  <h1>Puff & Loop</h1>
+  <p>Temukan kami di platform favoritmu:</p>
+
+  <!-- Ikon Sosial Media -->
+  <div class="icons">
+    <a href="https://instagram.com/namakamu" target="_blank">
+      <img src="icon-instagram.png" alt="Instagram" />
+    </a>
+    <a href="https://tiktok.com/@namakamu" target="_blank">
+      <img src="icon-tiktok.png" alt="TikTok" />
+    </a>
+    <a href="https://wa.me/nomorkamu" target="_blank">
+      <img src="icon-wa.png" alt="WhatsApp" />
+    </a>
   </div>
+
 </body>
 </html>
