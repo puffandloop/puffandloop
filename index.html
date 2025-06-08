@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Puff & Loop</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Puff & Loop Bio Link</title>
   <style>
     body {
       margin: 0;
@@ -14,10 +15,10 @@
 
     .container {
       display: flex;
-      justify-content: flex-end;
+      justify-content: center;
       align-items: center;
       height: 100vh;
-      padding-right: 100px;
+      padding: 20px;
     }
 
     .card {
@@ -26,6 +27,7 @@
       border-radius: 16px;
       text-align: center;
       box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      max-width: 90vw;
     }
 
     .card img.logo {
@@ -37,39 +39,45 @@
       display: block;
       margin: 10px auto;
       padding: 12px;
-      width: 200px;
+      width: 100%;
+      max-width: 250px;
       border: 1px solid #333;
       border-radius: 6px;
       text-decoration: none;
       color: #333;
       font-weight: bold;
       background-color: #fff;
+      transition: background-color 0.3s;
+    }
+
+    .card a.button:hover {
+      background-color: #f0eae5;
     }
 
     .social-icons {
       margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      gap: 16px;
     }
 
     .social-icons a img {
       width: 40px;
       height: 40px;
-      margin: 0 10px;
     }
   </style>
 </head>
 <body>
   <div class="container">
     <div class="card">
-      <img class="logo" src="logo.png" alt="Puff & Loop logo">
-
-      <a class="button" href="#">Instagram</a>
-      <a class="button" href="#">Tiktok</a>
-      <a class="button" href="#">Whatsapp</a>
-
+      <img src="logo.png" alt="Puff & Loop Logo" class="logo" />
+      <a href="https://instagram.com/yourusername" class="button">Instagram</a>
+      <a href="https://tiktok.com/@yourusername" class="button">Tiktok</a>
+      <a href="https://wa.me/628xxxxxxxxxx" class="button">Whatsapp</a>
       <div class="social-icons">
-        <a href="#"><img src="icon-wa.png" alt="WhatsApp"></a>
-        <a href="#"><img src="icon-instagram.png" alt="Instagram"></a>
-        <a href="#"><img src="icon-tiktok.png" alt="Tiktok"></a>
+        <a href="https://wa.me/628xxxxxxxxxx"><img src="icon-wa.png" alt="WhatsApp" /></a>
+        <a href="https://instagram.com/yourusername"><img src="icon-instagram.png" alt="Instagram" /></a>
+        <a href="https://tiktok.com/@yourusername"><img src="icon-tiktok.png" alt="Tiktok" /></a>
       </div>
     </div>
   </div>
