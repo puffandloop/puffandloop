@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,58 +7,49 @@
   <style>
     body {
       margin: 0;
-      font-family: 'Playfair Display', serif;
-      background-image: url('baground.png');
+      font-family: Arial, sans-serif;
+      background: url('background.png') no-repeat center center fixed;
       background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      flex-direction: column;
+      text-align: center;
+      color: white;
+    }
+    .container {
+      padding: 60px 20px;
+      background-color: rgba(0, 0, 0, 0.6);
+      min-height: 100vh;
     }
     .logo {
-      max-width: 200px;
-      margin-bottom: 30px;
+      max-width: 150px;
+      margin-bottom: 20px;
     }
-    .btn {
-      display: block;
-      background-color: rgba(255, 255, 255, 0.8);
-      color: #000;
-      text-decoration: none;
-      padding: 15px 25px;
-      margin: 10px;
-      border-radius: 10px;
-      font-weight: bold;
-      text-align: center;
-      width: 200px;
-      transition: background-color 0.3s;
-    }
-    .btn:hover {
-      background-color: #fff;
-    }
-    .social-icons {
-      margin-top: 30px;
-    }
-    .social-icons img {
+    .social-links img {
       width: 40px;
-      height: 40px;
-      margin: 0 10px;
+      margin: 10px;
+      transition: transform 0.3s ease;
+    }
+    .social-links img:hover {
+      transform: scale(1.2);
     }
   </style>
 </head>
 <body>
-  <img src="logo.png" alt="Logo" class="logo" />
+  <div class="container">
+    <img src="logo.png" alt="Logo Puff & Loop" class="logo" />
 
-  <a href="https://www.instagram.com/puffandloop/" class="btn">Instagram</a>
-  <a href="https://www.tiktok.com/@puffandloop" class="btn">TikTok</a>
-  <a href="https://wa.me/6283168611625" class="btn">WhatsApp</a>
+    <h1>Puff & Loop</h1>
+    <p>Temukan kami di platform favoritmu:</p>
 
-  <div class="social-icons">
-    <a href="https://wa.me/6283168611625"><img src="logo wa.png" alt="WhatsApp Icon" /></a>
-    <a href="https://www.instagram.com/puffandloop/"><img src="icon instagram.png" alt="Instagram Icon" /></a>
-    <a href="https://www.tiktok.com/@puffandloop"><img src="icon tiktok.png" alt="TikTok Icon" /></a>
+    <div class="social-links">
+      <a href="https://instagram.com/username" target="_blank">
+        <img src="icon-instagram.png" alt="Instagram" />
+      </a>
+      <a href="https://tiktok.com/@username" target="_blank">
+        <img src="icon-tiktok.png" alt="TikTok" />
+      </a>
+      <a href="https://wa.me/6281234567890" target="_blank">
+        <img src="icon-wa.png" alt="WhatsApp" />
+      </a>
+    </div>
   </div>
 </body>
 </html>
