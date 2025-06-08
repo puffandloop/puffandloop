@@ -2,77 +2,75 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Puff & Loop</title>
   <style>
     body {
       margin: 0;
-      padding: 40px 20px;
-      background: url('background.png') no-repeat center center fixed;
-      background-size: cover;
-      font-family: 'Arial', sans-serif;
+      font-family: 'Segoe UI', sans-serif;
       color: white;
       text-align: center;
+      background: url('bg-puffloop.png') no-repeat center center fixed;
+      background-size: cover;
+    }
+
+    .container {
+      padding-top: 60px;
     }
 
     .logo {
-      width: 200px;
+      width: 150px;
       height: auto;
-      margin-bottom: 30px;
     }
 
     h1 {
-      font-size: 2.5em;
-      margin-bottom: 10px;
-      text-shadow: 1px 1px 2px #000;
+      font-size: 48px;
+      margin: 20px 0 10px 0;
     }
 
     p {
-      font-size: 1.2em;
+      font-size: 18px;
       margin-bottom: 30px;
-      text-shadow: 1px 1px 2px #000;
     }
 
-    .icons {
+    .social-icons {
       display: flex;
       justify-content: center;
+      gap: 40px;
       align-items: center;
-      gap: 25px;
     }
 
-    .icons a img {
-      width: 40px;
-      height: 40px;
-      transition: transform 0.2s ease;
+    .social-icons a img {
+      width: 50px;
+      height: 50px;
+      transition: transform 0.2s;
     }
 
-    .icons a img:hover {
-      transform: scale(1.2);
+    .social-icons a img:hover {
+      transform: scale(1.1);
     }
   </style>
 </head>
 <body>
+  <div class="container">
+    <!-- Logo -->
+    <img src="logo-puffloop.png" alt="Puff & Loop Logo" class="logo" />
 
-  <!-- Logo -->
-  <img src="logonya.png" alt="Puff & Loop Logo" class="logo" />
+    <h1>Puff & Loop</h1>
+    <p>Temukan kami di platform favoritmu:</p>
 
-  <!-- Judul -->
-  <h1>Puff & Loop</h1>
-  <p>Temukan kami di platform favoritmu:</p>
-
-  <!-- Ikon Sosial Media -->
-  <div class="icons">
-    <a href="https://tiktok.com/@puffandloop" target="_blank">
-      <img src="icon-tiktok.png" alt="TikTok" />
-    </a>
-    <a href="https://www.instagram.com/puffandloop/" target="_blank">
-      <img src="icon-instagram.png" alt="Instagram" />
-    </a>
-    <a href="https://wa.me/6283168611625" target="_blank">
-      <img src="icon-wa.png" alt="WhatsApp" />
-    </a>
+    <!-- Sosial media icons -->
+    <div class="social-icons">
+      <a href="https://www.tiktok.com/@puffandloop" target="_blank">
+        <img src="icon-tiktok.png" alt="TikTok" />
+      </a>
+      <a href="https://www.instagram.com/puffandloop/" target="_blank">
+        <img src="icon-instagram.png" alt="Instagram" />
+      </a>
+      <a href="https://wa.me/6281212345678" target="_blank">
+        <img src="icon-whatsapp.png" alt="WhatsApp" />
+      </a>
+    </div>
   </div>
-
 </body>
 </html>
-
