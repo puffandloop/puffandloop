@@ -2,93 +2,55 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Puff & Loop</title>
-  <link rel="icon" href="logo.png.png" />
   <style>
     body {
       margin: 0;
-      padding: 0;
       font-family: sans-serif;
-      background: url('baground.png.png') no-repeat center center fixed;
+      background-image: url('baground.png.png');
       background-size: cover;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-    }
-
-    .container {
-      background: rgba(255, 255, 255, 0.92);
-      padding: 2rem;
-      border-radius: 20px;
+      background-position: center;
+      background-repeat: no-repeat;
+      color: white;
       text-align: center;
-      max-width: 340px;
-      width: 90%;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
     }
-
     .logo {
-      max-width: 150px;
-      margin-bottom: 1.5rem;
+      width: 150px;
+      margin: 30px auto 20px;
     }
-
-    .social-button {
-      display: block;
-      width: 100%;
-      margin: 0.5rem 0;
-      padding: 0.75rem;
-      font-weight: bold;
-      border: 2px solid #333;
-      border-radius: 12px;
-      background: white;
-      text-decoration: none;
-      color: black;
-      transition: background 0.3s;
-    }
-
-    .social-button:hover {
-      background: #f3f3f3;
-    }
-
-    .icons {
-      margin-top: 1rem;
+    .social-links {
       display: flex;
       justify-content: center;
-      gap: 1rem;
+      gap: 30px;
+      margin-top: 20px;
     }
-
-    .icons img {
-      width: 32px;
-      height: 32px;
-      transition: transform 0.2s;
+    .social-links a img {
+      width: 50px;
+      height: 50px;
+      transition: transform 0.3s ease;
     }
-
-    .icons img:hover {
+    .social-links a img:hover {
       transform: scale(1.1);
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <img src="logo.png.png" alt="Puff & Loop Logo" class="logo" />
+  <img src="logo.png.png" alt="Puff & Loop Logo" class="logo" />
 
-    <!-- TOMBOL DENGAN LINK BENAR -->
-    <a class="social-button" href="https://www.instagram.com/puffandloop/" target="_blank">Instagram</a>
-    <a class="social-button" href="https://www.tiktok.com/@puffandloop" target="_blank">TikTok</a>
-    <a class="social-button" href="https://wa.me/6281234567890" target="_blank">WhatsApp</a>
-
-    <div class="icons">
-      <a href="https://wa.me/6281234567890" target="_blank">
-        <img src="icon-wa.png.png" alt="Whatsapp Icon" />
-      </a>
-      <a href="https://www.instagram.com/puffandloop/" target="_blank">
-        <img src="icon-instagram.png.png" alt="Instagram Icon" />
-      </a>
-      <a href="https://www.tiktok.com/@puffandloop" target="_blank">
-        <img src="icon-tiktok.png.png" alt="TikTok Icon" />
-      </a>
-    </div>
+  <div class="social-links">
+    <!-- Instagram -->
+    <a href="https://www.instagram.com/puffandloop/" target="_blank">
+      <img src="icon-instagram.png.png" alt="Instagram">
+    </a>
+    <!-- TikTok -->
+    <a href="https://www.tiktok.com/@puffandloop" target="_blank">
+      <img src="icon-tiktok.png.png" alt="TikTok">
+    </a>
+    <!-- WhatsApp -->
+    <a href="https://wa.me/6281234567890" target="_blank">
+      <img src="icon-wa.png.png" alt="WhatsApp">
+    </a>
   </div>
 </body>
 </html>
